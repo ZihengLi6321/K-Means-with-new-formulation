@@ -1,6 +1,13 @@
 function [label, iter_num, center, obj] = kmeans_with_new_formulation(X, k, label)
 % INPUT:
 % X: dim*n matrix, each column is a data point
+% k: the amount of clusters
+% label(input):  initialization
+% label(output):  the label learned by k-means
+% iter_num:  the number of iterations for convergence
+% center£º center of the k clusters
+% obj: objective function value
+%
 
 n = size(X,2);
 %Initialization of F
